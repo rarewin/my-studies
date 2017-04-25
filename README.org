@@ -1,0 +1,11 @@
+#+TITLE: my studies
+
+* Abstract
+
+This project contains my studies.
+
+
+* License
+
+The source codes in this project is under 2-clause BSD license EXCEPT FOR THE DIRECTORIES WHICH CONTAINS LICENSE.txt.
+In such directories, please refer to LICENSE.txt you find.

@@ -1,0 +1,6 @@
+This dicrectory contains the source codes from the following projects:
+
+* rust-by-example: <https://github.com/rust-lang/rust-by-example>
+* rust-by-example-ja: <https://github.com/rust-lang-ja/rust-by-example-ja>
+
+The license of them are base on their license.
