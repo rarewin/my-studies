@@ -28,6 +28,20 @@ impl fmt::Display for Point2 {
     }
 }
 
+// 複素数用の構造体をPoint2を用いて作成する
+#[derive(Debug)]
+struct Complex {
+    real: f64,
+    imag: f64,
+}
+
+impl fmt::Display for Complex {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{} + {}i", self.real, self.imag)
+    }
+}
+
+
 fn main() {
     let minmax = MinMax(0, 14);
 
@@ -47,6 +61,14 @@ fn main() {
     println!("Compare points:");
     println!("Display: {}", point);
     println!("Debug: {:?}", point);
+
+    let complex = Complex {
+        real: 3.3,
+        imag: 7.2,
+    };
+
+    println!("Display: {}", complex);
+    println!("Debug: {:?}", complex);
 
     // `Debug`と`Display`は実装されていますが、`fmt::Binary`はされていないため
     // `{:b}`使用している以下の例はエラーになります、
