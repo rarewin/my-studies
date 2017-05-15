@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>ID</th>
+        <th>Task</th>
+      </tr>
+      {% for todo in result %}
+        <tr>
+	  {% for e in todo %}
+	    <td>{{e}}</td>
+	  {% endfor %}
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
