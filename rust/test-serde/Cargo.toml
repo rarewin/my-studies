@@ -1,0 +1,10 @@
+[package]
+name = "test-serde"
+version = "0.1.0"
+authors = ["Katsuki Kobayashi <katsuki.kobayashi@xacti-co.com>"]
+
+[dependencies]
+serde = "*"
+serde_json = "*"
+serde_yaml = "*"
+serde_derive = "*"
