@@ -1,0 +1,6 @@
+[package]
+name = "serde_by_example"
+version = "0.1.0"
+authors = ["Katsuki Kobayashi <katsuki.kobayashi@xacti-co.com>"]
+
+[dependencies]
