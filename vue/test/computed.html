@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://unpkg.com/vue"></script>
+  <body>
+    <div id="app" v-text="size_with_unit"></div>
+    <script>
+     const app = new Vue({
+       el: '#app',
+       data: {size: 46890000},
+       computed: {
+         size_with_unit:function() {
+           let res = '';
+           if (this.size < 1024) {
+             res = this.size + 'B';
+           } else {
+             this.size /= 1024;
+             if (this.size < 1024) {
+               res = this.size.toFixed(2) + 'KiB';
+             } else {
+               res = (this.size / 1024).toFixed(2) + 'MiB';
+             }
+           }
+           return res;
+         }
+       }
+     });
+    </script>
+  </body>
+</html>

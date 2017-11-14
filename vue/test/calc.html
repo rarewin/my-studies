@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://unpkg.com/vue"></script>
+  <body>
+    <div id="app" v-text="(size / 1024).toFixed(2) + 'KiB'"></div>
+    <script>
+     const app = new Vue({
+       el: '#app',
+       data: {size: 4689}
+     });
+    </script>
+  </body>
+</html>
