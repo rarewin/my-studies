@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://unpkg.com/vue"></script>
+  <body>
+    <div id ="app" v-show="is_visible">
+      <h1 v-text="message"></h1>
+      <p v-if="rank >= 100">あなたはプラチナ会員です</p>
+      <p v-else-if="rank >= 10">あなたはゴールド会員です</p>
+      <p v-else>あなたは一般会員です</p>
+      <ul>
+        <li v-for="item in items">{{ item }}</li>
+      </ul>
+    </div>
+    <script>
+     const app = new Vue({
+       el: '#app',
+       data: {
+         is_visible: true,
+         message: 'Hello world',
+         rank: 100,
+         items: ['apple', 'orange', 'grape', 'melon']
+       }
+     })
+    </script>
+  </body>
+</html>
