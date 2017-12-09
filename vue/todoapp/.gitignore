@@ -6,7 +6,10 @@ selenium-debug.log
 test/unit/coverage
 test/e2e/reports
 
+/static
+/staticfiles
+
 __pycache__
+.tern-port
 
 /.venv
-

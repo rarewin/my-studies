@@ -13,6 +13,6 @@ for i, line in enumerate(fileinput.input(file, inplace=1)):
 for i, line in enumerate(fileinput.input(file, inplace=1)):
     sys.stdout.write(line.replace('css', "css' %}"))
 for i, line in enumerate(fileinput.input(file, inplace=1)):
-    sys.stdout.write(line.replace('src=//', "src={% static '"))
+    sys.stdout.write(line.replace('src=//', "src=\"{% static '"))
 for i, line in enumerate(fileinput.input(file, inplace=1)):
-    sys.stdout.write(line.replace('js', "js' %}"))
+    sys.stdout.write(line.replace('js', "js' %}\""))
