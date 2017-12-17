@@ -1,6 +1,6 @@
 # todoapp
 
-> TODO app
+> TODO App by django with Vue.js
 
 ## Build Setup
 
