@@ -8,3 +8,7 @@ test/e2e/reports
 
 .tern-port
 
+/.venv
+
+db.sqlite3
+__pycache__
