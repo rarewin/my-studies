@@ -4,8 +4,10 @@ import App from './App'
 import store from './store/store.js'
 
 /* eslint-disable no-new */
-new Vue({
+const v = new Vue({
   el: 'body',
   store: store,
   components: { App }
 })
+
+v.$store.dispatch('getTodos')

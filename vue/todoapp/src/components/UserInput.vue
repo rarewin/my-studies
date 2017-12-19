@@ -14,9 +14,9 @@
    },
    methods: {
      createTodo () {
+       console.log(this.newTodoText, 'created!')
        this.$store.dispatch('addTodo', {text: this.newTodoText})
        this.newTodoText = ''
-       console.log(this.newTodoText, 'created!')
      },
      clearTodos () {
        this.$store.dispatch('clearTodos')
