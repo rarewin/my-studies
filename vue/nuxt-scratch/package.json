@@ -1,0 +1,9 @@
+{
+	"name": "nuxt-scratch",
+	"scripts": {
+		"dev": "nuxt"
+	},
+	"dependencies": {
+		"nuxt": "^1.3.0"
+	}
+}
